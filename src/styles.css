@@ -1,0 +1,43 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body{
+    background: #5472b89e;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(51, 46, 46);
+    color: white;
+  }
+  .mat-fab{
+      background: rgb(51, 46, 46) !important;
+
+  }
+  .table-striped tbody tr:nth-of-type(odd) input {
+    color: white;
+}
+tr {
+    background: #5472b89e;
+    color: white;
+}
+.wrapper {
+    text-align: center;
+}
+
+table{
+    table-layout: fixed;
+    width: 250px;
+}
+
+th, td {
+    width: 6em;
+    word-wrap: break-word;
+}
+input , nav{
+    background-color: rgb(51, 46, 46)!important;
+    color: white !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: rgb(51, 46, 46)!important;
+}

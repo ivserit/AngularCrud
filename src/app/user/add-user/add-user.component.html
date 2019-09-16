@@ -1,0 +1,31 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Añadir Usuario</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="username">Nick:</label>
+          <input type="text" formControlName="username" placeholder="Nick" name="username" class="form-control" id="username" >
+        </div>
+    
+        <div class="form-group">
+          <label for="firstName">Nombre:</label>
+          <input matInput formControlName="firstname" placeholder="Nombre" name="firstname" class="form-control" id="firstname">
+        </div>
+    
+        <div class="form-group">
+          <label for="lastName">Apellido:</label>
+          <input formControlName="lastname" placeholder="Apellido" name="lastname" class="form-control" id="lastname">
+        </div>
+    
+        <div class="form-group">
+          <label for="age">Edad:</label>
+          <input type="number" formControlName="age" placeholder="Edad" name="age" class="form-control" id="age">
+        </div>
+    
+        <div class="form-group">
+          <label for="salary">Salario:</label>
+          <input type="number" formControlName="salary" placeholder="Salario" name="salary" class="form-control" id="salary">
+        </div>
+        
+    <button mat-fab>Añadir</button>
+  </form>
+</div>

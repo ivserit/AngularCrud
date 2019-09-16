@@ -1,0 +1,36 @@
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> Lista usuarios</h2>
+
+
+  <table mat-table class="mat-elevation-z8 table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Nick</th>
+      <th>Edad</th>
+      <th>Salario</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.firstname}}</td>
+      <td>{{user.lastname}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.salary}}</td>
+      <td><button mat-fab (click)="deleteUser(user)"> Borrar</button></td>
+      <td><button mat-fab (click)="editUser(user)" > Editar</button></td>
+      <td><button mat-fab (click)="addUser()"> Añadir</button></td>
+    </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+

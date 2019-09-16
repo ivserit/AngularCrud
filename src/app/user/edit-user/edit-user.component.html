@@ -1,0 +1,34 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Editar Usuario</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="hidden">
+      <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id" readonly="true">
+    </div>
+    <div class="form-group">
+      <label for="username">Nick:</label>
+      <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username" >
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">Nombre:</label>
+      <input matInput formControlName="firstname" placeholder="First Name" name="firstname" class="form-control" id="firstname">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Apellido:</label>
+      <input formControlName="lastname" placeholder="Last name" name="lastname" class="form-control" id="lastname">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Edad:</label>
+      <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">Salario:</label>
+      <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
+    </div>
+    
+    <button mat-fab>Actualizar</button>
+  </form>
+</div>
